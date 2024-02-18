@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
+
+* {
+  font-family: "Kode Mono", monospace;
+  background-color: black;
+  color: lightgrey;
+}
+
+.body {
+  max-width: 90%;
+}
+
+h1,
+h2,
+h3,
+.highlight {
+  color: #00e600;
+}
+
+.subheading {
+  color: #3399ff;
+}
+
+.skills {
+  max-width: 70%;
+  color: #3399ff;
+  border-bottom: #3399ff solid 2px;
+}
+
+.form {
+  max-width: 600px;
+}
+
+.form-control {
+  background-color: black;
+  color: lightgrey;
+  border-color: darkgray;
+}
+
+.form-control:focus {
+  background-color: black;
+  color: lightgrey;
+  border-color: darkgray;
+  box-shadow: 0 0 0 0.2rem #3399ff;
+}
+
+.form-control::placeholder {
+  color: lightgray;
+}
+
+.btn {
+    color: lightgrey;
+    border-color: lightgray;
+}
+
+.btn:hover {
+    border-color: #3399ff;
+}
+
+.btn:active {
+    border-width: 3px;
+    border-color: #3399ff !important;
+}
