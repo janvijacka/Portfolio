@@ -49,15 +49,54 @@ h3,
 }
 
 .btn {
-    color: lightgrey;
-    border-color: lightgray;
+  color: lightgrey;
+  border-color: lightgray;
 }
 
 .btn:hover {
-    border-color: #3399ff;
+  border-color: #3399ff;
+  color: lightgray;
 }
 
 .btn:active {
-    border-width: 3px;
-    border-color: #3399ff !important;
+  color: lightgray !important;
+  border-width: 3px;
+  border-color: #3399ff !important;
+}
+
+.card {
+  border-width: 2px;
+  border-color: black;
+  border-radius: 8px;
+}
+
+.card:hover {
+  border-width: 3px;
+  border-color: #3399ff;
+}
+
+.card-title {
+  color: #00e600;
+}
+
+.carousel {
+  max-width: 500px;
+}
+
+img {
+  border-radius: 20px;
+}
+
+.carousel-caption {
+  border-radius: 10px;
+  opacity: 90%;
+}
+
+.carousel-indicators {
+  background: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  border-radius: 10px;
 }
