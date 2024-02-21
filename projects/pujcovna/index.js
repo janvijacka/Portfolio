@@ -26,6 +26,9 @@ document.getElementById("suma").addEventListener("click", function (e) {
       let rozpocet = parseFloat(document.getElementById("rozpocet").value);
       let rozdil = rozpocet - cena;
 
+      // rozdil> 0 ? document.getElementById("info-rozpocet").textContent = `Máš nato, zbude ti ${parseInt(rozdil)} Kč.` : document.getElementById("info-rozpocet").textContent = `Nemáš nato, chybí ti ${parseInt(rozdil) * -1} Kč.`;
+      // To same co nize akorat zapsane pomoci ternarniho operatoru.
+
       if (rozdil > 0) {
         document.getElementById(
           "info-rozpocet"
