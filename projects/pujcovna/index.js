@@ -65,5 +65,6 @@ document.getElementById("suma").addEventListener("click", function (e) {
     document.getElementById("rozpocet").value = 0;
     document.getElementById("info-rozpocet").textContent = "";
     document.getElementById("email").value = "";
+    document.getElementById("odesli").setAttribute("disabled", true);
   });
 });
