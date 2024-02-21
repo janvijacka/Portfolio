@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pujčovna</title>
+    <style>
+      body {
+        width: 550px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Půjčovna kol</h1>
+    <fieldset>
+      <legend>Typ kola</legend>
+      <form>
+        <input
+          class="chb-group"
+          value="500"
+          name="chb-horske"
+          id="chb-horske"
+          type="checkbox"
+        /><label for="chb-horske">horské 500 Kč/den</label
+        ><input
+          name="horske"
+          id="horske"
+          type="number"
+          class="nbmr-group"
+          min="0"
+          value="0"
+        /><label for="horske">počet</label><br />
+        <input
+          class="chb-group"
+          value="200"
+          name="chb-detske"
+          id="chb-detske"
+          type="checkbox"
+        /><label for="chb-detske"></label>dětské 200 Kč/den<input
+          name="detske"
+          id="detske"
+          type="number"
+          class="nbmr-group"
+          min="0"
+          value="0"
+        /><label for="detske">počet</label><br />
+        <input
+          class="chb-group"
+          value="1500"
+          name="chb-silnicni"
+          id="chb-silnicni"
+          type="checkbox"
+        /><label for="chb-silnicni"></label>silniční 1500 Kč/den<input
+          name="silnicni"
+          id="silnicni"
+          type="number"
+          class="nbmr-group"
+          min="0"
+          value="0"
+        /><label for="silnicni">počet</label><br />
+        <input
+          class="chb-group"
+          value="2500"
+          name="chb-gravel"
+          id="chb-gravel"
+          type="checkbox"
+        /><label for="chb-gravel"></label>gravel 2500 Kč/den<input
+          name="gravel"
+          id="gravel"
+          type="number"
+          class="nbmr-group"
+          min="0"
+          value="0"
+        /><label for="gravel">počet</label>
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend>Doba půjčení</legend>
+      <select id="doba">
+        <option value="5">5 dnů</option>
+        <option value="7">týden</option>
+        <option value="14">14 dní</option>
+        <option value="30">měsíc</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Nosič na kola</legend>
+      <input value="1.05" name="nosic" id="stresni" type="radio" /><label
+        for="stresni"
+        >cyklonosič střešní (+ 5 procent z celkové ceny zápůjčky navíc)</label
+      ><br />
+      <input value="1.1" name="nosic" id="tazne" type="radio" /><label
+        for="tazne"
+        >cyklonosič na tažné zařízení (+ 10 procent z celkové ceny zápůjčky
+        navíc)</label
+      ><br />
+      <input value="1" name="nosic" id="bez" type="radio" checked /><label
+        for="bez"
+        >není třeba cyklonosič</label
+      ><br />
+    </fieldset>
+    <hr />
+    <button id="suma">Spočítej</button>
+    <p id="info-cena"></p>
+    <br />
+    <label for="">Zadej svůj rozpočet: </label
+    ><input type="number" id="rozpocet" /><button id="btn-rozpocet">Ověř</button
+    ><br />
+    <p id="info-rozpocet"></p>
+    <label for="">Zadej svůj email: </label><input id="email" type="email" />
+    <hr />
+    <button id="odesli" disabled>Odešli</button>
+    <script src="./index.js"></script>
+  </body>
+</html>

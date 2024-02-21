@@ -1,0 +1,17 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#home {
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/17/09/28/hotel-1831072_1280.jpg);
+  background-size: cover;
+}
+.formular {
+  width: 600px;
+}
+.input {
+  width: 90%;
+}
+.bg {
+  background-color: lightgrey;
+}
