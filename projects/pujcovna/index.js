@@ -39,13 +39,31 @@ document.getElementById("suma").addEventListener("click", function (e) {
         ).textContent = `Nemáš nato, chybí ti ${parseInt(rozdil) * -1} Kč.`;
       }
     });
-});
-
-document.getElementById("email").addEventListener("keyup", function (e) {
-  let test = document.getElementById("email").value;
-  if (test.includes("@")) {
-    document.getElementById("odesli").removeAttribute("disabled");
-  } else {
-    document.getElementById("odesli").setAttribute("disabled", true);
-  }
+  document.getElementById("email").addEventListener("keyup", function (e) {
+    let test = document.getElementById("email").value;
+    if (test.includes("@")) {
+      document.getElementById("odesli").removeAttribute("disabled");
+    } else {
+      document.getElementById("odesli").setAttribute("disabled", true);
+    }
+  });
+  document.getElementById("odesli").addEventListener("click", function (e) {
+    cena = 0;
+    document.getElementById(
+      "info-cena"
+    ).textContent = `Celková cena je ${parseInt(cena)} Kč.`;
+    for (let i = 0; i < chbBroup.length; i++) {
+      if (chbBroup[i].checked) {
+        chbBroup[i].checked = false;
+      }
+    }
+    for (let i = 0; i < nmbrGroup.length; i++) {
+      nmbrGroup[i].value = 0;
+    }
+    document.getElementById("bez").checked = true;
+    document.getElementById("puvodni").selected = true;
+    document.getElementById("rozpocet").value = 0;
+    document.getElementById("info-rozpocet").textContent = "";
+    document.getElementById("email").value = "";
+  });
 });

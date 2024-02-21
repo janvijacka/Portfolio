@@ -77,7 +77,7 @@
     <fieldset>
       <legend>Doba půjčení</legend>
       <select id="doba">
-        <option value="5">5 dnů</option>
+        <option id="puvodni" value="5">5 dnů</option>
         <option value="7">týden</option>
         <option value="14">14 dní</option>
         <option value="30">měsíc</option>
@@ -104,7 +104,10 @@
     <p id="info-cena"></p>
     <br />
     <label for="">Zadej svůj rozpočet: </label
-    ><input type="number" id="rozpocet" /><button id="btn-rozpocet">Ověř</button
+    ><input type="number" id="rozpocet" min="0" value="0" /><button
+      id="btn-rozpocet"
+    >
+      Ověř</button
     ><br />
     <p id="info-rozpocet"></p>
     <label for="">Zadej svůj email: </label><input id="email" type="email" />
