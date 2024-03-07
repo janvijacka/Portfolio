@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/projects/akvarium/static/css/main.0308d33e.css",
+    "main.js": "/projects/akvarium/static/js/main.a4f67a26.js",
+    "index.html": "/projects/akvarium/index.html",
+    "main.0308d33e.css.map": "/projects/akvarium/static/css/main.0308d33e.css.map",
+    "main.a4f67a26.js.map": "/projects/akvarium/static/js/main.a4f67a26.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0308d33e.css",
+    "static/js/main.a4f67a26.js"
+  ]
+}
